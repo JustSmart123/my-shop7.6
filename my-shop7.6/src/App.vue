@@ -1,5 +1,10 @@
 <template>
   <div id="app">
+    <nav>
+    <router-link to="/">Головна</router-link>
+    <router-link to="/admin">Про нас</router-link>
+  </nav>
+  <router-view></router-view>
     <HeaderComponent />
     <ProductList />
     <ReviewsComponent />

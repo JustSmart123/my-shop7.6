@@ -5,10 +5,15 @@
       </div>
       <nav class="nav">
         <ul>
-          <li><a href="#">Головна</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Про нас</a></li>
-          <li><a href="#">Контакти</a></li>
+          <!-- Посилання на головну сторінку -->
+        <li><router-link to="/">Головна</router-link></li>
+        
+        <!-- Посилання на адміністративну панель -->
+        <li><router-link to="/admin">Адмін-панель</router-link></li>
+
+        <!-- Додаткові підменю для адміністративної панелі -->
+        <li><router-link to="/admin/products">Продукти</router-link></li>
+        <li><router-link to="/admin/reviews">Відгуки</router-link></li>
         </ul>
       </nav>
     </header>
