@@ -1,13 +1,12 @@
 <template>
-  <div class="admin-panel">
-    <!-- Горизонтальна панель навігації -->
-    <nav class="admin-nav">
-      <router-link to="/admin/products" active-class="active-link">Каталог товарів</router-link>
+  <div>
+    <nav>
+      <router-link to="/admin/products" active-class="active-link">Головна</router-link>
       <router-link to="/admin/reviews" active-class="active-link">Відгуки</router-link>
     </nav>
 
     <!-- Контент адміністративної панелі -->
-    <main class="admin-content">
+    <main>
       <router-view /> <!-- Динамічне завантаження сторінок -->
     </main>
   </div>
@@ -21,15 +20,14 @@ export default {
 
 <style scoped>
 
-.admin-panel {
+div {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   background: #f4f4f9;
 }
 
-/* Горизонтальне меню */
-.admin-nav {
+nav {
   display: flex;
   justify-content: right;
   gap: 50px;
@@ -40,18 +38,14 @@ export default {
   top: 0;
   z-index: 1000;
 }
-
-/* Стилі для посилань */
-.admin-nav a {
+a {
   color: rgb(0, 0, 0);
   font-size: 16px;
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 5px;
 }
-
-/* Ефект при наведенні */
-.admin-nav a:hover {
+a:hover {
   transform: scale(1.05);
 }
 
@@ -60,9 +54,7 @@ export default {
   background:  white;
   font-weight: bold;
 }
-
-/* Основний контент */
-.admin-content {
+main {
   padding: 20px;
   margin: 20px;
 }
