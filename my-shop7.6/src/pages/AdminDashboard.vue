@@ -20,7 +20,7 @@ export default {
 </script>
 
 <style scoped>
-/* Основний контейнер */
+
 .admin-panel {
   display: flex;
   flex-direction: column;
